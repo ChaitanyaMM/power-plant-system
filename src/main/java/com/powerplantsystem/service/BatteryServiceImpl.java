@@ -1,6 +1,8 @@
 package com.powerplantsystem.service;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.OptionalDouble;
 
@@ -52,6 +54,10 @@ public class BatteryServiceImpl implements BatteryService {
 		BatteryDTO bDTO = new BatteryDTO();
 
 		if (!list.isEmpty()) {
+			Comparator<BatteryEntity> sorting 
+			= (o1, o2) -> o1.getName().compareTo(o2.getName());
+			
+			Collections.sort(list, sorting);
 
 			OptionalDouble avg = list.stream().mapToInt(i -> i.getWattCapacity()).average();
 

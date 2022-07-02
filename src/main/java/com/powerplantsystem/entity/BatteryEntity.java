@@ -17,4 +17,5 @@ public class BatteryEntity {
 	private String name;
 	private String postcode;
 	private int wattCapacity;
+	
 }
