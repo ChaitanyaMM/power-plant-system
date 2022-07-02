@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.powerplantsystem.Dto.BatteryDTO;
-import com.powerplantsystem.Dto.BatteryEntityDTO;
+import com.powerplantsystem.dto.BatteryDTO;
+import com.powerplantsystem.dto.BatteryEntityDTO;
 import com.powerplantsystem.entity.BatteryEntity;
 import com.powerplantsystem.exception.InvalidInputException;
 import com.powerplantsystem.exception.NoDataFoundException;

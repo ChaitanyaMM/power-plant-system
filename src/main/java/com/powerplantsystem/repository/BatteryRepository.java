@@ -1,4 +1,4 @@
-package com.powerplantsystem.dao;
+package com.powerplantsystem.repository;
 
 import java.util.List;
 

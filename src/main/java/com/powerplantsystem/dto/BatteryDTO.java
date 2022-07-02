@@ -1,4 +1,4 @@
-package com.powerplantsystem.Dto;
+package com.powerplantsystem.dto;
 
 import java.util.List;
 

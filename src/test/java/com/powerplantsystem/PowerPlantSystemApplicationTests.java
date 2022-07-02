@@ -8,6 +8,8 @@ class PowerPlantSystemApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
+		
 	}
 
 }

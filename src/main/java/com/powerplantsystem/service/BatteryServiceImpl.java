@@ -11,10 +11,10 @@ import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.powerplantsystem.Dto.BatteryDTO;
-import com.powerplantsystem.Dto.BatteryEntityDTO;
-import com.powerplantsystem.dao.BatteryRepository;
+import com.powerplantsystem.dto.BatteryDTO;
+import com.powerplantsystem.dto.BatteryEntityDTO;
 import com.powerplantsystem.entity.BatteryEntity;
+import com.powerplantsystem.repository.BatteryRepository;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -29,7 +29,7 @@ public class BatteryServiceImpl implements BatteryService {
 		ModelMapper mapper = new ModelMapper();
 		List<BatteryEntity> entityToDto = mapper.map(plantCapacity, new TypeToken<List<BatteryEntity>>() {
 		}.getType());
-		log.error("payload {} " + entityToDto);
+		log.info("payload {} " + entityToDto);
 
 		return entityToDto;
 

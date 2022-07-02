@@ -4,8 +4,8 @@ import java.util.List;
 
 import javax.validation.Valid;
 
-import com.powerplantsystem.Dto.BatteryDTO;
-import com.powerplantsystem.Dto.BatteryEntityDTO;
+import com.powerplantsystem.dto.BatteryDTO;
+import com.powerplantsystem.dto.BatteryEntityDTO;
 import com.powerplantsystem.entity.BatteryEntity;
 
 public interface BatteryService {
